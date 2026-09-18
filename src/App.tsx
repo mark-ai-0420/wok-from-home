@@ -211,7 +211,7 @@ const MainApp: React.FC = () => {
       />
 
       {/* 3. Hero Section */}
-      <main className="flex-1">
+      <main className="flex-1 pb-28 sm:pb-0">
         <Hero
           onOrderNow={() => handleScrollTo('menu')}
           onQuickAdd={(item) => handleAddToCart(item)}

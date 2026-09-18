@@ -129,7 +129,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ onAddToCart }) => {
         </div>
 
         {/* Sticky Sub-Navigation Category Filter Bar */}
-        <div className="sticky top-18 sm:top-20 z-30 bg-[#FFFBF5]/95 backdrop-blur-md py-3 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 border-y border-[#E8DDCE]/80 shadow-xs mb-8 transition-all overscroll-x-contain touch-pan-x">
+        <div className="sticky top-[4.25rem] sm:top-20 z-30 bg-[#FFFBF5]/95 backdrop-blur-md py-2.5 sm:py-3 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 border-y border-[#E8DDCE]/80 shadow-xs mb-8 transition-all overscroll-x-contain touch-pan-x">
           <div className="max-w-7xl mx-auto flex items-center justify-start sm:justify-center overflow-x-auto gap-2 sm:gap-2.5 scrollbar-none">
             {categories.map(cat => {
               const isActive = activeCategory === cat.id;
@@ -145,7 +145,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ onAddToCart }) => {
                       menuEl.scrollIntoView({ behavior: 'smooth' });
                     }
                   }}
-                  className={`px-3.5 py-2 rounded-xl font-display font-bold text-xs sm:text-sm tracking-wide whitespace-nowrap transition-all cursor-pointer btn-press border flex items-center gap-2 min-h-[44px] ${
+                  className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl font-display font-bold text-xs sm:text-sm tracking-wide whitespace-nowrap transition-all cursor-pointer btn-press border flex items-center gap-2 min-h-[40px] sm:min-h-[44px] ${
                     isActive
                       ? 'bg-[#111827] text-white border-[#CC8800] shadow-md'
                       : 'bg-white text-gray-800 border-[#E8DDCE] hover:border-gray-400 hover:bg-[#F4EDE2]'

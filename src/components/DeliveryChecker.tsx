@@ -202,16 +202,16 @@ export const DeliveryChecker: React.FC = () => {
                   </span>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 text-xs font-mono">
-                  <div className="bg-[#1F2937] p-3 rounded-xl border border-gray-700">
-                    <span className="text-gray-400 block text-[10px] uppercase">Standard Delivery Rate:</span>
-                    <span className="text-lg font-extrabold text-[#FDE68A]">
+                <div className="grid grid-cols-1 min-[420px]:grid-cols-2 gap-3 sm:gap-4 text-xs font-mono">
+                  <div className="bg-[#1F2937] p-3 sm:p-3.5 rounded-xl border border-gray-700 flex flex-col justify-between">
+                    <span className="text-gray-400 block text-[10px] uppercase font-semibold">Standard Delivery Rate:</span>
+                    <span className="text-base sm:text-lg font-extrabold text-[#FDE68A] mt-1 truncate">
                       {selectedArea.fee === 0 ? 'FREE (Poblacion)' : `₱${selectedArea.fee} PHP`}
                     </span>
                   </div>
-                  <div className="bg-[#1F2937] p-3 rounded-xl border border-gray-700">
-                    <span className="text-gray-400 block text-[10px] uppercase">Estimated Travel:</span>
-                    <span className="text-lg font-extrabold text-white">
+                  <div className="bg-[#1F2937] p-3 sm:p-3.5 rounded-xl border border-gray-700 flex flex-col justify-between">
+                    <span className="text-gray-400 block text-[10px] uppercase font-semibold">Estimated Travel:</span>
+                    <span className="text-base sm:text-lg font-extrabold text-white mt-1">
                       {selectedArea.estimatedMinutes}
                     </span>
                   </div>

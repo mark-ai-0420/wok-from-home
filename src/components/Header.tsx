@@ -26,29 +26,29 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <header className="sticky top-0 z-40 bg-[#FFFBF5]/95 backdrop-blur-md border-b border-[#E8DDCE] transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-18 sm:h-20">
+        <div className="flex items-center justify-between min-h-[4.25rem] py-2 sm:py-2.5 sm:h-20">
           {/* Brand Logo - Accessible Button */}
           <button 
             type="button"
             onClick={() => handleNavClick('hero')} 
-            className="flex items-center gap-3 cursor-pointer group text-left p-1 rounded-xl focus-visible:outline-2 focus-visible:outline-[#C55221]"
+            className="flex items-center gap-2.5 sm:gap-3 cursor-pointer group text-left p-1 rounded-xl focus-visible:outline-2 focus-visible:outline-[#C55221] shrink-0"
             aria-label="Wok From Home Indang - Go to top"
           >
-            <div className="w-11 h-11 sm:w-12 sm:h-12 bg-[#111827] rounded-lg flex items-center justify-center border-2 border-[#CC8800] shadow-md group-hover:scale-105 transition-transform" aria-hidden="true">
-              <Flame className="w-6 h-6 sm:w-7 sm:h-7 text-[#CC8800] animate-pulse" />
+            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#111827] rounded-lg flex items-center justify-center border-2 border-[#CC8800] shadow-md group-hover:scale-105 transition-transform shrink-0" aria-hidden="true">
+              <Flame className="w-5 h-5 sm:w-7 sm:h-7 text-[#CC8800] animate-pulse" />
             </div>
             <div>
               <div className="flex items-center gap-1.5">
-                <span className="font-display font-extrabold text-xl sm:text-2xl tracking-tight text-[#111827] uppercase group-hover:text-[#C55221] transition-colors">
+                <span className="font-display font-extrabold text-lg sm:text-2xl tracking-tight text-[#111827] uppercase group-hover:text-[#C55221] transition-colors whitespace-nowrap">
                   {siteConfig.store.storeName}
                 </span>
-                <span className="bg-[#C55221] text-white text-[10px] font-mono font-bold px-1.5 py-0.5 rounded tracking-wider uppercase">
+                <span className="bg-[#C55221] text-white text-[9px] sm:text-[10px] font-mono font-bold px-1.5 py-0.5 rounded tracking-wider uppercase shrink-0">
                   {siteConfig.store.branchName}
                 </span>
               </div>
-              <p className="text-xs text-gray-700 font-medium flex items-center gap-1">
-                <MapPin className="w-3 h-3 text-[#C55221]" aria-hidden="true" />
-                <span>Chef Pinoy Food Favorites • Cavite</span>
+              <p className="text-[11px] sm:text-xs text-gray-700 font-medium flex items-center gap-1 leading-tight">
+                <MapPin className="w-3 h-3 text-[#C55221] shrink-0" aria-hidden="true" />
+                <span className="truncate max-w-[180px] sm:max-w-none">Chef Pinoy Food Favorites • Cavite</span>
               </p>
             </div>
           </button>

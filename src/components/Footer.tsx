@@ -16,7 +16,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         🔥 Cooking daily in Indang, Cavite • Freshly Wokked • Zero Compromise on Rekado
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-36 sm:pb-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Col 1: Brand & Manifesto (2 cols wide on desktop) */}
           <div className="lg:col-span-2 space-y-4">
@@ -125,18 +125,18 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-10 mt-10 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500 font-mono">
-          <div className="flex flex-wrap items-center gap-3">
+        <div className="pt-10 mt-10 pb-20 sm:pb-0 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500 font-mono">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 text-center sm:text-left">
             <span>© {new Date().getFullYear()} {siteConfig.store.storeName} ({siteConfig.store.branchName}). All rights reserved.</span>
             <span>•</span>
             <a
               href="#/admin"
-              className="text-gray-400 hover:text-[#CC8800] underline decoration-gray-700 hover:decoration-[#CC8800] transition-colors"
+              className="text-gray-400 hover:text-[#CC8800] underline decoration-gray-700 hover:decoration-[#CC8800] transition-colors py-1 px-2 rounded-sm"
             >
               Admin Portal
             </a>
           </div>
-          <div className="flex items-center gap-1 text-gray-400">
+          <div className="flex items-center justify-center gap-1 text-gray-400 text-center">
             <span>Crafted with</span>
             <Heart className="w-3.5 h-3.5 text-[#C55221] fill-[#C55221]" />
             <span>for hungry remote workers and foodies in Cavite</span>

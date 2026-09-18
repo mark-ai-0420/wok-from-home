@@ -26,13 +26,13 @@ export const Hero: React.FC<HeroProps> = ({
           {/* Left Column: Bold Editorial Poster Typography */}
           <div className="lg:col-span-7 space-y-6">
             {/* Pill Badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#C55221]/10 border border-[#C55221]/30 text-[#C55221] text-xs font-mono font-bold tracking-wide uppercase">
-              <span className="relative flex h-2 w-2">
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 rounded-full bg-[#C55221]/10 border border-[#C55221]/30 text-[#C55221] text-xs font-mono font-bold tracking-wide uppercase max-w-full">
+              <span className="relative flex h-2 w-2 shrink-0">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C55221] opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#C55221]"></span>
               </span>
-              <span>{siteConfig.store.kitchenShort} • Serving Indang, Alfonso, Mendez</span>
-              <span className="text-[#8F5500] font-bold">★ Tatak Chef</span>
+              <span className="truncate">Daine 2, Indang • Cavite Delivery</span>
+              <span className="text-[#8F5500] font-bold shrink-0">★ Tatak Chef</span>
             </div>
 
             {/* Main Headline */}
@@ -107,7 +107,7 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="lg:col-span-5">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               {/* Amber border offset frame */}
-              <div className="absolute inset-0 bg-[#CC8800] rounded-3xl transform translate-x-3 translate-y-3 -rotate-1 shadow-xl"></div>
+              <div className="absolute inset-0 bg-[#CC8800] rounded-3xl transform translate-x-1.5 translate-y-1.5 sm:translate-x-3 sm:translate-y-3 -rotate-1 shadow-xl"></div>
               
               {/* Main Card */}
               <div className="relative bg-[#111827] text-white rounded-3xl p-5 sm:p-6 border-2 border-[#CC8800] shadow-2xl overflow-hidden">
