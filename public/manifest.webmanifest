@@ -1,0 +1,18 @@
+{
+  "name": "Wok From Home - Chef Pinoy Food Favorites",
+  "short_name": "Wok From Home",
+  "description": "Chef-crafted Pinoy food favorites cooked hot with authentic wok-hei. Masarap, Siksik sa Rekado, at Abot-kaya sa bulsa!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFBF5",
+  "theme_color": "#FFFBF5",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/menu/pancit_sotanghon_bilao.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
